@@ -1,0 +1,724 @@
+///media-vars///
+w = 'width'
+h = 'height'
+wh = 'wh'
+hl = 'hl'
+hp = 'hp'
+wl = 'wl'
+who = 'who'
+
+ip6 = 'ip6'
+
+media(a,b,c)
+	if a == 'width' || a == 'height'
+		return 'screen and (max-'+ a +' '+ b +'px)'
+	if a == 'wh' 
+		return 'screen and (max-width '+b+'px) and (max-height '+c+'px)'
+	if a == 'hl' 
+		return 'screen and (max-height '+b+'px) and (orientation: landscape)'
+	if a == 'wl' 
+		return 'screen and (max-height '+b+'px) and (orientation: landscape)'
+	if a == 'hp' 
+		return 'screen and (max-height '+b+'px) and (orientation: portrait)'
+	if a == 'who'
+		return 'only screen and (width '+b+'px) and (height '+c+'px)'
+	if a == 'ip6'
+		return 'only screen and (min-device-width : 375px) and (max-device-width : 667px) and (device-aspect-ratio : 375/667) and (aspect-ratio : 667/375) and (device-pixel-ratio : 2) and (-webkit-min-device-pixel-ratio : 2)'
+
+w-220  = 'screen and (max-width   220px)'
+w-300  = 'screen and (max-width   300px)'
+w-319  = 'screen and (max-width   319px)'
+w-320  = 'screen and (max-width   320px)'
+w-330  = 'screen and (max-width   330px)'
+w-400  = 'screen and (max-width   400px)'
+w-440  = 'screen and (max-width   440px)' 
+w-470  = 'screen and (max-width   470px)' 
+w-480  = 'screen and (max-width   480px)'
+w-500  = 'screen and (max-width   500px)'
+w-640  = 'screen and (max-width   640px)'
+w-768  = 'screen and (max-width   768px)'
+w-860  = 'screen and (max-width   860px)'
+w-1024 = 'screen and (max-width  1024px)'
+w-1200 = 'screen and (max-width  1200px)'
+w-1260 = 'screen and (max-width  1260px)'
+
+h-250  = 'screen and (max-height 250px)'
+h-280  = 'screen and (max-height 280px)'
+h-300  = 'screen and (max-height 300px)'
+h-310  = 'screen and (max-height  310px)'
+h-320  = 'screen and (max-height  320px)'
+h-330  = 'screen and (max-height  330px)'
+h-350  = 'screen and (max-height  350px)'
+h-360  = 'screen and (max-height  360px)'
+h-380  = 'screen and (max-height  380px)'
+h-400  = 'screen and (max-height 400px)'
+h-440  = 'screen and (max-height 440px)'
+h-470  = 'screen and (max-height 470px)'
+h-480  = 'screen and (max-height 480px)'
+h-540  = 'screen and (max-height 540px)'
+h-640  = 'screen and (max-height 640px)'
+h-680  = 'screen and (max-height 680px)'
+h-700  = 'screen and (max-height 700px)'
+h-800  = 'screen and (max-height 800px)'
+h-890  = 'screen and (max-height 890px)'
+
+hl-250  = 'screen and (max-height 250px) and (orientation: landscape)'
+hl-280  = 'screen and (max-height 280px) and (orientation: landscape)'
+hl-300  = 'screen and (max-height 300px) and (orientation: landscape)'
+hl-310  = 'screen and (max-height  310px) and (orientation: landscape)'
+hl-320  = 'screen and (max-height  320px) and (orientation: landscape)'
+hl-330  = 'screen and (max-height  330px) and (orientation: landscape)'
+hl-350  = 'screen and (max-height  350px) and (orientation: landscape)'
+hl-360  = 'screen and (max-height  360px) and (orientation: landscape)'
+hl-380  = 'screen and (max-height  380px) and (orientation: landscape)'
+hl-400  = 'screen and (max-height 400px) and (orientation: landscape)'
+hl-440  = 'screen and (max-height 440px) and (orientation: landscape)'
+hl-470  = 'screen and (max-height 470px) and (orientation: landscape)'
+hl480  = 'screen and (max-height 480px) and (orientation: landscape)'
+hl-540  = 'screen and (max-height 540px) and (orientation: landscape)'
+hl-640  = 'screen and (max-height 640px) and (orientation: landscape)'
+hl-700  = 'screen and (max-height 700px) and (orientation: landscape)'
+hl-890  = 'screen and (max-height 890px) and (orientation: landscape)'
+
+wh-650 = 'screen and (max-width 650px) and (max-height 320px)'
+wh-480 = 'screen and (max-width 480px) and (max-height 320px)'
+wh-400 = 'screen and (max-width 400px) and (max-height 320px)'
+wh-320 = 'screen and (max-width 320px) and (max-height 480px)'
+wh-300 = 'screen and (max-width 300px) and (max-height 350px)'
+wh-250 = 'screen and (max-width 250px) and (max-height 350px)'
+wh-220 = 'screen and (max-width 220px) and (max-height 400px)'
+
+custom = 'screen and (max-width 470px) and (max-height 350px)'
+
+
+
+tf-fz-640 = 'screen and (min-width:640px)'
+tf-fz-480 = 'screen and (min-width:480px) and (max-width:639px)'
+tf-fz-320 = 'screen and (min-width:320px) and (max-width:479px)'
+tf-fz-319 = 'screen and (max-width:319px)'
+
+
+//ipone 5 sf
+ph-330  = 'screen and (max-height: 320px) and (min-height: 280px) and (orientation: landscape)'
+ph5l-320 = 'screen and (device-aspect-ratio: 40/71) and (orientation: landscape) and (min-height: 320px)'
+ph4l-320 = 'screen and (device-aspect-ratio: 2/3) and (orientation: landscape) and (min-height: 320px)'
+
+
+///star-vars///
+container = 640px 
+full-screen = w-768
+full-screen-wh = 100%
+
+
+
+// * p body
+// 	margin 0
+// 	padding 0
+// 	box-sizing border-box
+// 	color inherit
+// 	font-size inherit
+// 	font-weight inherit
+// 	border inherit
+// 	outline inherit
+// 	line-height inherit
+// 	// user-select none
+// 	text-decoration inherit
+// 	letter-spacing inherits
+// 	// font-family 'Roboto' sans-serif
+
+/*______reset______*/
+@charset "UTF-8"
+//url = embedurl
+// @import "../libs/fonts.css"
+html
+body 
+	background #FFF
+	color #000
+	-webkit-tap-highlight-color  rgba(255 255 255 0)
+	-webkit-focus-ring-color  rgba(255 255 255 0)
+	outline  none
+
+	-moz-user-select  none
+	-o-user-select  none
+	-khtml-user-select  none
+	-webkit-user-select  none
+	user-select  none
+	resize  none
+
+	-webkit-text-size-adjust  none
+	-moz-text-size-adjust  none
+	-ms-text-size-adjust  none
+	-o-text-size-adjust  none
+	text-size-adjust  none
+
+body
+div
+dl
+dt
+dd
+ul
+ol
+li
+h1
+h2
+h3
+h4
+h5
+a
+h6
+pre
+code
+form
+fieldset
+legend
+input
+textarea
+p
+blockquote
+th
+td 
+	margin 0
+	padding 0
+	box-sizing  border-box
+
+table 
+	border-collapse collapse
+	border-spacing 0
+
+fieldset
+img 
+	border 0
+	vertical-align  middle
+
+address
+caption
+cite
+code
+dfn
+em
+strong
+th
+var 
+	font-style normal
+	font-weight normal
+
+ 
+ol
+ul 
+	list-style none
+	box-sizing  border-box
+
+ 
+caption
+th 
+	text-align left
+
+h1
+h2
+h3
+h4
+h5
+h6 
+	font-size 100%
+	font-weight normal
+
+q:before
+q:after 
+	content ''
+
+abbr
+acronym 
+	border 0
+	font-variant normal
+
+sup 
+	vertical-align text-top
+
+sub 
+	vertical-align text-bottom
+
+input
+textarea
+select 
+	font-family inherit
+	font-size inherit
+	box-sizing  border-box
+	font-weight inherit
+
+input
+textarea
+select 
+	box-sizing  border-box
+	font-size 100%    
+	-moz-user-select  text
+	-o-user-select  text
+	-khtml-user-select  text
+	-webkit-user-select  text
+	user-select  text
+	resize  none
+
+legend 
+	color #000
+
+p 
+	-moz-hyphens  auto
+	-webkit-hyphens  auto
+	-ms-hyphens  auto
+	hyphens  auto
+
+
+body
+html
+p
+div
+	margin 0
+	padding 0
+	
+
+h1
+h2
+h3
+h4
+h5
+h6
+p
+span
+b
+td 
+strong 
+a
+ul
+li
+button
+label
+input
+div
+	font-family 'Rubik'
+	margin 0 
+	padding 0
+	outline none
+	box-sizing border-box
+	
+button 
+	background-color transparent
+	border none	
+	& focus
+		outline none
+		
+	
+/*______grid______*/
+
+// .row
+// 	display block
+// 	position relative
+// 	font-size 0 !important
+// .col-w-1
+// 	width 5%
+// .col-w-2
+// 	width 10%
+// .col-w-3
+// 	width 15%
+// .col-w-4
+// 	width 20%
+// .col-w-5
+// 	width 25%
+// .col-w-6
+// 	width 30%
+// .col-w-7
+// 	width 35%
+// .col-w-8
+// 	width 40%
+// .col-w-9
+// 	width 45%
+// .col-w-10
+// 	width 50%
+// .col-w-11
+// 	width 55%
+// .col-w-12
+// 	width 60%
+// .col-w-13
+// 	width 65%
+// .col-w-14
+// 	width 70%
+// .col-w-15
+// 	width 75%
+// .col-w-16
+// 	width 80%
+// .col-w-17
+// 	width 85%
+// .col-w-18
+// 	width 90%
+// .col-w-19
+// 	width 95%
+// .col-w-20
+// 	width 100%
+
+// .col-w-1
+// .col-w-2
+// .col-w-3
+// .col-w-4
+// .col-w-5
+// .col-w-6
+// .col-w-7
+// .col-w-8
+// .col-w-9
+// .col-w-10
+// .col-w-11
+// .col-w-12
+// .col-w-13
+// .col-w-14
+// .col-w-15
+// .col-w-16
+// .col-w-17
+// .col-w-18
+// .col-w-19
+// .col-w-20
+// 	font-size 14px
+// 	display inline-block
+// 	vertical-align top
+// .al-rt
+// 	text-align right
+// .al-lt
+// 	text-align left
+// .al-cnt
+// 	text-align center
+
+// .alv-tp
+// 	vertical-align top
+// .alv-bt
+// 	vertical-align bottom
+// .alv-mdl
+// 	vertical-align middle
+// .old
+// 	margin-left -1px
+// a hover
+// a active
+// a focus
+// 	color inherit
+// 	font-size inherit
+// 	font-weight inherit
+// 	border inherit
+// 	outline inherit
+// 	line-height inherit
+// 	text-decoration inherit
+// 	letter-spacing inherit
+
+// @media h-300
+// 	.wrapper .header, .wrapper footer, .wrapper .block-main
+// 		display block
+// 	.wrapper
+// 		display block
+// 		background-color #fff
+	// .wrapper .block-main
+	// 	height 200px
+
+// @media wh-220
+// 	.wrapper header, .wrapper footer, .wrapper .block-main
+// 		display block
+// 	.wrapper
+// 		display block
+// 		position static
+// 		background-color #000
+// 	.wrapper .block-main
+// 		height 200px
+		
+
+////fonts/////
+
+// .font-size
+// 	font-size 14px
+// 	line-height 14px
+	
+// // @media w-480
+// // 	.font-size
+// // 		font-size 14px
+// // 		line-height 14px
+
+// @media w-320
+// 	.font-size
+// 		font-size 10px
+// 		line-height 10px
+		
+// @media w-319
+// 	.font-size
+// 		font-size 9px
+// 		line-height 9px
+
+// @media h-440
+// 	.font-size
+// 		font-size 9px
+// 		line-height 9px
+
+// @media h-440
+// 	.footer p
+// 		line-height 12px !important
+
+/*--- common ---*/
+main-text-clor =  #676464
+
+body
+html
+	height 100%
+	width 100%
+
+body
+	//background linear-gradient(to left, #00feff 0%, #6262ea 100%)
+	background-color #fbfbfb
+	color: main-text-clor 
+	font-size 14px
+
+	
+
+#root
+	display table
+	width 100%
+	height 100%
+	background-image url(img/3.jpg)
+	background-size: 100% auto;
+	background-attachment: fixed;
+	
+.lib-app
+	display: table-row;
+	height: 100%;
+	width: 100%;
+.wrapper
+	display table-cell
+	width 100%
+	vertical-align middle
+	position relative
+	&:after
+		content: '';
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.5);
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+.container
+	max-width 1200px
+	width 95%
+	margin 0 auto
+	position relative
+	z-index 99
+	
+.transition
+	transition all .2s
+	
+.anim-appear 
+	opacity: 0;
+	transform translateX(100px)
+	
+.anim-appear.anim-appear-active
+		opacity: 1;
+		transform translateX(0)
+		transition: .15s ease-in; 
+	
+// #root 
+// 	display flex
+// 	align-items center
+// 	height 100%
+// 	transition all .2s
+
+
+
+.common__itm-style
+	padding 5px 10px
+	background-color #efefef
+	box-shadow 0px 8px 20px 2px rgba(0,0,0,0.20)
+	padding 10px 20px
+	///border-radius 40px
+	display inline-block
+	color main-text-clor 
+	margin 10px 0px
+	
+.common__h1
+	font-size 26px 
+	//font-weight 600
+	text-align left
+	line-height 1
+	padding 15px 30px
+	text-transform capitalize
+	
+.common__p
+	color main-text-clor 
+	text-align center
+	padding 10px 0px 
+	font-size 14px
+	
+.common__btn
+	text-decoration: none;
+	color: main-text-clor 
+	background-color: #fff;
+	border-radius: 20px;
+	cursor pointer
+
+.common__link
+	display block
+	margin 10px 0px
+	color main-text-clor 
+	text-decoration underline
+
+.common__itm-field
+	box-shadow 0px 8px 20px 2px rgba(0,0,0,0.10)
+	border-radius 3px
+	padding 15px
+	background-color #fff
+	margin 10px 0px
+	margin-top 0px
+	display block
+
+.common__btn-ctrl-small
+.common__btn-ctrl
+	border-radius 20px
+	font-size 18px
+	position relative
+	//width 40px
+	padding 0px 20px
+	height 40px
+	border-radius 5px
+	margin 5px 0px
+	margin-right 10px
+	vertical-align: top
+	text-decoration none
+	i 
+		margin 0
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%,-50%)
+
+a.common__btn-ctrl-small
+a.common__btn-ctrl
+	text-decoration none
+	display inline-block
+	padding 5px 10px
+	height auto
+
+.common__btn-ctrl-small
+	font-size 14px
+// .common__btn-ctrl
+// 	background-color transparent
+// 	i 
+// 		font-size 30px
+// 		font-weight bolder
+
+.common__form-send
+	color: #fff;
+	font-size: 14px;
+	background-color: #2d89d2;
+	padding: 5px 15px;
+	border-radius: 20px;
+
+.common__input-text
+	border none
+	border-bottom 1px solid main-text-clor 
+	font-size 16px
+	margin-right 10px
+	background-color transparent
+	margin-top 15px
+	
+.btn--wh
+	color main-text-clor 
+	//border 1px solid main-text-clor 
+	
+.btn--rd
+	background-color #ec845f
+	color #fff
+
+.btn--blu
+	background-color #2d89d2
+	color #fff
+	
+.btn--grn
+	background-color #91c18a
+	color #fff
+
+.color--blu
+	color #2d89d2
+	
+.color--gr
+	color #91c18a
+	
+.color--rd
+	color #ec845f
+	
+.flex--wh
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+.app--loading 
+	color #fff
+	font-size 18px
+.wh--10 
+	width 10%
+.wh--20 
+	width 20%
+.wh--25
+	width 25%
+.wh--30 
+	width 30%
+.wh--35
+	width 35%
+.wh--40 
+	width 40%
+.wh--45 
+	width 45%
+.wh--50 
+	width 50%
+.wh--60 
+	width 60%
+.wh--65
+	width 65%
+.wh--70 
+	width 70%
+.wh--80 
+	width 80%
+.wh--90 
+	width 90%
+.wh--100 
+	width 100%
+.fa
+	margin-right 10px
+	
+
+/*--- common-header ---*/
+.lib-app__header-list
+	text-align right
+	li 
+		display inline-block
+		margin-left 30px
+	.header-list__link
+		text-decoration none
+		font-size: 14px;
+		color: main-text-clor 
+		transition all 0.2s
+		display inline-block
+		position relative
+		color #fff
+		&:after
+			content: '';
+			width: 100%;
+			height: 3px;
+			background-color: #5f6368;
+			opacity: 0;
+			position: absolute;
+			left: 0;
+			bottom: 0px;
+			transition all 0.2s
+		&:hover:after
+			opacity 0.5
+	
+		
+
+			
+	
+	
+	
+
+
+
+	
+	
+	

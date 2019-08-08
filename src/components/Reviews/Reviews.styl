@@ -1,0 +1,48 @@
+.item-book
+	.common__btn-ctrl
+		font-size 14px
+		margin-bottom 10px
+.review
+	position relative
+	.common__btn-ctrl
+		position: absolute;
+		top: 50%
+		transform translateY(-50%)
+		right: 10px;
+		margin 0
+		transition all .2s
+	.common__btn-ctrl.btn--grn
+		margin-right 50px
+	.review__name
+	.review__text
+		margin-bottom 10px
+	
+	// .review__form
+	// 	opacity: 0
+	// 	transition all 0.2s
+	// 	transform translateX(-100px)
+	// 	z-index - 1
+		
+	.review__text
+		position relative
+		padding-left 10px
+		&:before
+			content: '';
+			width: 2px;
+			height: 100%;
+			background-color: #2d89d2;
+			display: block;
+			position: absolute;
+			/* margin-left: 20px; */
+			left: 0;
+	.show-false
+		display none
+	.show-true
+		display block
+	// .review-form-show
+	// 	opacity: 1;
+
+	// 	transform translateX(0px)
+	// 	z-index 1
+		
+		

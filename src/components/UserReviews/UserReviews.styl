@@ -1,0 +1,39 @@
+.user-review
+	.review__rating-title
+		margin-right 10px
+	.show-false
+		display none
+	.show-true
+		display block
+	.review__name
+	.review__text
+		margin-bottom 10px
+		
+	.review__text
+		position relative
+		padding-left 10px
+		&:before
+			content: '';
+			width: 2px;
+			height: 100%;
+			background-color: #2d89d2;
+			display: block;
+			position: absolute;
+			/* margin-left: 20px; */
+			left: 0;
+	.review__ctrls
+		margin 10px 0px
+	.review__form-raiting
+		font-size 26px
+		display: inline-block;
+		vertical-align middle
+		padding-left: 20px;
+		i
+			cursor pointer
+			&:hover
+				opacity 0.5
+		
+	.review__form
+		>p
+			display inline-block
+			vertical-align middle	
